@@ -60,7 +60,19 @@ So here we go. And feel free to send in your PRs!
 
 ## Reason 1: Basic characteristics of Spryker Development
 Let's start off with some development principles that Spryker is based on, an why you might like working with it.
-* Spryker`s entire architecture is built upon the best practices and well-known design principles [SOLID](https://en.wikipedia.org/wiki/SOLID), [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), [KISS](https://en.wikipedia.org/wiki/KISS_principle), [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it), [Facade](https://en.wikipedia.org/wiki/Facade_pattern) & [Factory method](https://en.wikipedia.org/wiki/Factory_method_pattern);
+* Spryker`s entire architecture is built upon the best practices and well-known design principles:
+- [SOLID](https://en.wikipedia.org/wiki/SOLID), 
+- [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), 
+- [KISS](https://en.wikipedia.org/wiki/KISS_principle), 
+- [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it),
+- [Layered Architecture](https://docs.spryker.com/docs/scos/dev/architecture/modules-and-application-layers.html)
+and Design patterns:
+- [Facade](https://en.wikipedia.org/wiki/Facade_pattern),
+- [Factory method](https://en.wikipedia.org/wiki/Factory_method_pattern),
+- [Bridge](https://en.wikipedia.org/wiki/Bridge_pattern),
+- [DTO (Data Transfer Onject)](https://en.wikipedia.org/wiki/Data_transfer_object),
+- etc;
+
 * Spryker has multiple levels of code reviews that are integrated into the development process:   
   * Developer code review      
   * Technical lead code review       
@@ -124,7 +136,7 @@ Here's an overview of the main technology used to work with Spryker:
 Also see the [Spryker page on StackShare.io](https://stackshare.io/spryker/spryker-os) and check out the [Spryker Development Environment Overview](https://.spryker.com/learn/course/external/view/elearning/380/spryker-development-environment-overview) course.
 
 ## Reason 2: Programming language: PHP
-Nearly 80% of websites use PHP ([source](https://w3techs.com/technologies/details/pl-php)), PHP has been one of the top 5 programming languages since the year 2000 ([source](https://statisticsanddata.org/data/the-most-popular-programming-languages-1965-2022-new-update/)), and it's the foundation of the most popular framework Laravell ([source](https://statisticsanddata.org/data/most-popular-backend-frameworks-2012-2022/)).
+Nearly 80% of websites use PHP ([source](https://w3techs.com/technologies/details/pl-php)), PHP has been one of the top 5 programming languages since the year 2000 ([source](https://statisticsanddata.org/data/the-most-popular-programming-languages-1965-2022-new-update/)), and it's the foundation of the most popular framework Laravel ([source](https://statisticsanddata.org/data/most-popular-backend-frameworks-2012-2022/)).
 
 PHPs flexibility and low barrier of entry is both a blessing and a curse. The curse being that, for some developers, PHP has gotten a bad reputation because of its perceived inconsistencies, security matters, sloppy syntax and simply because it is everywhere. If something is very popular, it's almost inevitable that there will be a lot of people messing it up.
 
@@ -137,10 +149,9 @@ Finding good developers is never easy, but because of PHPs popularity, it's easy
 
 :construction:	[TODO]
 
-## Reason 3: No need for a big team to build or run a Spryker project
-:construction:	[TODO]
+## Reason 3: Spryker features, customisability and extensibility
 
-## No Spaghetti code, but a State Machine
+### Features: No Spaghetti code, but a State Machine
 One of the biggest challenges in e-commerce is the mapping and implementation of business processes in the IT infrastructure. What can still be easily implemented with a simple B2C business model becomes a real challenge with more complex business processes in the B2B area.  
 
 As an example of this, we can imagine the processing of an order. The order must be processed separately depending on the products ordered, the desired delivery time, the stock level and the type of payment.  
@@ -149,14 +160,31 @@ Depending on the complexity of the process, this often leads to complex "if-then
 
 Spryker provides a solution to this problem with the so-called state machine. Processes can be easily modeled and visualized based on states, transitions and events. This solution gives both the developer and the shop operator a transparent and easy-to-maintain opportunity to implement and expand complex processes. 
 
-## Import and Export has been taken care of
+Apart from that, there are already implemented State Mashines for Order Management (OMS) and Marketplace Order Management (MP OMS).
+
+### Features: Import and Export has been taken care of
 Every e-commerce project needs a way to communicate with the outside world: Products and inventories, orders and customer data, etc. must all be able to be exchanged and compared with other systems. Each software product goes its own way and offers the data in a variety of different formats and forms.  
  
 Unfortunately, many older systems only offer limited solutions to data, often illustrated by the overwhelming number of third-party modules dedicated to this problem. 
 
 Spryker, on the other hand, already provides a framework to be able to implement imports and exports quickly and cleanly. The developer is left with the task of bringing the data into the correct format. The actual process of importing and exporting is then accomplished with the tools provided by Spryker. 
 
+### Extensibility: There are FIVE development strategies in Spryker
+With those strategies you can add or adjust Spryker the way you need. Check more information [here](https://docs.spryker.com/docs/scos/dev/back-end-development/extending-spryker/development-strategies/development-strategies.html) 
+
+### Customisability:
+#### Tired of adjusting checkout? 
+Just add a new Checkout step or update the old one with one of the development strategis mentioned above.
+
+#### Modularity
+Spryker is a modular system, so if you need some new feature - just add your module! 
+
+
+## Reason 3: No need for a big team to build or run a Spryker project
+:construction:	[TODO]
+
 ## Reason 4: Killer SDK
+Can you create your module with one console command? Yes, you can in Spryker! 
 :construction:	[TODO]
 
 ## Reason 5: Long term maintainability
